@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ToDoList</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <section class="todo">
+        <div class="container">
+            <h1 class="todo__title">What's up, <span class="userName editable">Bekzat</span></h1>
+            <h4 class="todo__description">CREATE A TODO</h4>
+            <p class="todo__text">Whats's on your todo list?</p>
+            <div class="input__wrapper">
+                <input class="todo__input" type="text" placeholder="e.g. get a milk">
+            </div>
+            <p class="todo__text error"></p>
+            <p class="todo__text">Pick a category</p>
+            <form class="category">
+                <div class="category__wrapper">
+                    <label>
+                        <input type="radio" name="category" id="category1" value="business">
+                        <span class="bubble business"></span>
+                        <div>business</div>
+                    </label>
+                    <label>
+                        <input type="radio" name="category" id="category2" value="personal">
+                        <span class="bubble personal"></span>
+                        <div>personal</div>
+                    </label>
+                </div>
+            </form>
+            <div class="btn-wrapper">
+                <button class="btn-add">Add todo</button>
+            </div>
+            <p class="todo__text">TODO LIST</p>
+            <div class="todo__list">
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
